@@ -1,0 +1,19 @@
+{
+
+    "manifest_version": 2,
+    "name": "Youtube Media Buttons Fix",
+    "version": "1.0",
+
+    "description": "Fixes youtube's media buttons.",
+
+    "icons": {
+        "64": "x64.png",
+        "128": "x128.png"
+    },
+
+    "content_scripts": [{
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["fix.js"]
+    }]
+
+}
