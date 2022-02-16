@@ -1,11 +1,11 @@
-const buttons = {
-    "www.youtube.com": { next: ".ytp-next-button.ytp-button", previous: ".ytp-previous-button.ytp-button" },
-    "music.youtube.com": { next: ".next-button ", previous: ".previous-button " }
-}
-
-
 (function() {
     "use strict";
+
+
+    const buttons = {
+        "www.youtube.com": { next: ".ytp-next-button.ytp-button", previous: ".ytp-previous-button.ytp-button" },
+        "music.youtube.com": { next: ".next-button ", previous: ".previous-button " }
+    }
 
     function jumpToNextTrack() {
         const nextSongButton = document.querySelector(buttons[document.location.hostname].next);
